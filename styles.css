@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HEADER */
+.header {
+    background-color: #0b2d5c;
+    padding: 20px 0;
+    color: white;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+    padding: 40px 0;
+}
+
+/* DASHBOARD */
+.dashboard {
+    padding: 20px 0 60px 0;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.card h4 {
+    margin: 0;
+    color: #0b2d5c;
+    font-size: 28px;
+}
+
+.card p {
+    margin: 5px 0 0 0;
+    color: #666;
+}
+
+/* FOOTER */
+footer {
+    background-color: #0b2d5c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+
+

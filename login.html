@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Acceso Clientes - Gestoría Integral Chactemal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <h1>Acceso a Plataforma Privada</h1>
+    </div>
+</header>
+
+<main class="container" style="padding: 60px 0;">
+
+    <div class="card" style="max-width: 400px; margin: auto;">
+        <h3>Iniciar Sesión</h3>
+
+        <input type="text" id="usuario" placeholder="Usuario" style="width:100%; padding:10px; margin-top:15px;">
+        <input type="password" id="password" placeholder="Contraseña" style="width:100%; padding:10px; margin-top:10px;">
+        <button onclick="validarLogin()" style="width:100%; padding:10px; margin-top:15px; background:#0b2d5c; color:white; border:none;">
+            Ingresar
+        </button>
+
+        <p id="mensaje" style="color:red; margin-top:10px;"></p>
+    </div>
+
+</main>
+
+<script>
+function validarLogin() {
+    const usuario = document.getElementById("usuario").value;
+    const password = document.getElementById("password").value;
+
+    if(usuario === "admin" && password === "1234") {
+        window.location.href = "dashboard.html";
+    } else {
+        document.getElementById("mensaje").innerText = "Credenciales incorrectas";
+    }
+}
+</script>
+
+</body>
+</html>
